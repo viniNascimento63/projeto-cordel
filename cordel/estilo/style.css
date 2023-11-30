@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-conteudo: 'Sriracha', --fonte-padrao;
+    --fonte-destaque: 'Passion One', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+body {
+    background-color: white;
+}
+
+/* Cabeçalho */
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-family: var(--fonte-destaque);
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+
+header > p {
+    font: normal normal 1em var(--fonte-padrao);
+    padding-bottom: 50px;
+}
+
+header > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+header > p > a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+
+p.estrofe {
+    font: normal normal 2.5vw var(--fonte-conteudo);
+    margin: 20px;
+    margin-left: 25px;
+    padding: 5px;
+}
+
+.imagem {
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+}
+
+.imagem > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 10px;
+    border-radius: 15px 0px 10px 0px;
+    text-shadow: 1px 1px 0px black;
+}
+
+#joaninha {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center; 
+}
+
+#papeis {
+    background-image: url('../imagens/background002.jpg');
+}
+
+/* Rodapé */
+
+footer {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    
+}
+
+footer > p > a {
+    color: white;
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}
